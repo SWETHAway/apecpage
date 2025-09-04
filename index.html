@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adhiparasakthi Engineering College - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo {
+      margin-top: 40px;
+    }
+
+    .login-container {
+      background-color: #fff;
+      display: inline-block;
+      margin-top: 20px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="logo.png" alt="Adhiparasakthi Engineering College Logo" width="150">
+  </div>
+
+  <!-- Login Form -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+</body>
+</html>
